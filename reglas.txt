@@ -1,0 +1,58 @@
+Reglas del juego:
+
+  Init:
+    - Se crea el mazo
+    - Los jugadores agarran 3 cartas
+  primer turno:
+    - p1 puede cantar envido
+    - p1 puede cantar truco
+    - p1 juega una carta
+    - p2 puede cantar envido
+    - p2 puede cantar truco
+    - p2 juega una carta
+
+  segundo turno:
+    - El ganador del primer turno tira una carta
+    - p1 puede cantar truco
+    - p1 juega una carta
+    - p2 puede cantar truco
+    - p2 juega una carta
+
+    si px ganó los dos turnos gana la mano
+
+  tercer turno:
+    - El ganador del segundo turno tira una carta
+    - p1 puede cantar truco
+    - p1 juega una carta
+    - p2 puede cantar truco
+    - p2 juega una carta
+
+  Logica del envido
+  Solo en la primer mano
+  px canta envido                     2 no querino 1
+  py acepta - rechaza - envido        4 no querido 3
+  px acepta - rechaza - real envido   6 no querido 5
+  Así hasta falta envido              los puntos que le faltan al otro hasta 15 o 30, no querido 7
+
+  Logico del truco
+  px no canta nada pero gana la mano    1 punto
+  px canta truco                        2 no querido 1
+  py quiero - no quiero retruco         3 no querido 2
+  px quiero no quiero vale cuatro       4 no querido 3
+
+  Ranking de cartas
+  valor       |   carta
+  14              1 espada
+  13              1 basto
+  12              7 espada
+  11              7 oro
+  10              3
+  9               2
+  8               1 copa - 1 oro
+  7               12
+  6               11
+  5               10
+  4               7 copa - 7 basto
+  3               6
+  2               5
+  1               4
