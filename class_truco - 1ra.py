@@ -23,7 +23,6 @@ class Carta():
         self.numero = numero
         self.npalo = palo
         self.palo = palos[palo]
-        self.imagen = f'img/{self.npalo}_{self.numero}.jpg'
         self.valor = self._rankear()
 
     def mostrar(self):
@@ -64,7 +63,6 @@ class Jugador():
         self.nombre = nombre
         self.puntos = 0
         self.mano = []
-        self.cartas_jugadas = []
         self.primera = False
 
     def agarrar_carta(self, carta):
