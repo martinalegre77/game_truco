@@ -66,6 +66,7 @@ class Jugador():
         self.mano = []
         self.cartas_jugadas = []
         self.primera = False
+        self.modificador_truco = 1
 
     def agarrar_carta(self, carta):
         self.mano.append(carta)
